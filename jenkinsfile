@@ -12,6 +12,7 @@
         stage('Test'){
             steps{
                 echo 'Running regression tests'
+                
             }
         }
         stage ('UAT'){
