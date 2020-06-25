@@ -1,17 +1,20 @@
-﻿Funcionalidade: Login
-    
-    Esquema do Cenario: Tentando logar
+#language: pt
 
-        Dado que acesso a página Login
+Funcionalidade: Login
+
+    Esquema do Cenario: Tentando logar
+        
+        Dado que acesso a página login
         Quando eu submeto as minhas credenciais "<email>" e "<senha>"
         Então devo ver a seguinte mensagem de alerta:
-            """
-            Atenção: Seus dados de acesso não estão corretos. Se você tem certeza que o e-mail está correto, solicite uma nova senha.
-            """
-        
+          """
+          Atenção: Seus dados de acesso não estão corretos. Se você tem certeza que o e-mail está correto, solicite uma nova senha.
+          """
+  
         Exemplos:
-        |   email               |   senha   |
-        |   joao@yahoo.com      |   abc123  |
-        |                       |   abc123  |
-        |   joao@gmail.com      |           |
-        |   fulano%hotmail.com  |   asd123  |
+        | email              | senha  |
+        | joao@yahoo.com     | abc123 |
+        |                    | abc123 |
+        | joao@gmail.com     |        |
+        | fulano%hotmail.com | asd123 |
+      
