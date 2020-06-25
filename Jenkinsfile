@@ -24,6 +24,7 @@ pipeline {
                 }
             }
         }
+
         stage('UAT') {
             steps {
                 echo 'Wait for User Acceptance'
